@@ -3,5 +3,4 @@ resource "aws_instance" "example" {
     instance_type = "t3.micro"
     subnet_id     = "subnet-02ca7f775f2785f08"
     key_name      = "ProwlerTest"
-  
 }
