@@ -4,3 +4,4 @@ resource "aws_instance" "example" {
     subnet_id     = var.subnet_id
     key_name      = var.key_name
 }
+
