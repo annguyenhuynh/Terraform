@@ -4,8 +4,8 @@ provider "aws" {
 
 module "extra_ec2" {
     source        = "./modules/ec2"
-    ami_id        = "ami-0def5678"   
-    instance_type = "t4g.micro"       
+    ami_id        = "ami-09e53888c1546115a"   
+    instance_type = "t3.small"       
     subnet_id     = var.subnet_id
     key_name      = var.key_name
     name          = "extra-instance"
