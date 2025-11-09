@@ -13,8 +13,8 @@ module "extra_ec2" {
 }
 
 #-----Backend configuration-----
-resource "aws_s3_bucket" "s3_bakcend" {
-    bucket = "an-terraform-tfstate"
-    region = "us-gov-west-1"
+# resource "aws_s3_bucket" "s3_bakcend" {
+#     bucket = "an-terraform-tfstate"
+#     region = "us-gov-west-1"
   
-}
+# }
