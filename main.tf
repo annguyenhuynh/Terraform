@@ -11,3 +11,10 @@ module "extra_ec2" {
     name          = "extra-instance"
     security_group_id = var.security_group_id
 }
+
+#-----Backend configuration-----
+resource "aws_s3_bucket" "s3_bakcend" {
+    bucket = "an-terraform-tfstate"
+    region = "us-gov-west-1"
+  
+}
