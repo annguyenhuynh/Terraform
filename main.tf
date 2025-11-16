@@ -4,12 +4,14 @@ provider "aws" {
 
 module "extra_ec2" {
     source        = "./modules/ec2"
-    ami_id        = "ami-09e53888c1546115a"   
-    instance_type = "t3.small"       
+    ami_id        = var.ami_id  
+    instance_type = var.instance_type      
     subnet_id     = var.subnet_id
     key_name      = var.key_name
-    name          = "extra-instance"
+    name          = "dev-instance-${terraform.workspace}"
     security_group_id = var.security_group_id
+    
+    
 }
 
 #-----Backend configuration-----
