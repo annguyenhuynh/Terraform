@@ -1,10 +1,10 @@
 provider "aws" {
     region = var.aws_region 
-    profile = "default"
+    profile = "DataEngineerPowerUsers-040402472214"
 }
 
 resource "aws_s3_bucket" "tfstate_bucket" {
-  bucket        = "an-terraform-tfstate"
+  bucket        = "an-huynh-glue-data-brew"
   force_destroy = true
 }
 
